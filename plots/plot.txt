@@ -1,0 +1,33 @@
+Read 60000 images (d=784)
+Using 4 threads
+
+VP-tree vantage_point_select = small_median
+VP-tree distance_function = (Euclidean distance)^4
+perplexity: 12
+k: 20
+theta: 0.5
+learning_rate: 400
+exaggerate: 12
+momentum: 0.5
+final_momentum: 0.8
+momentum_switch_iter: 250
+stop_exaggerating_iter: 50
+
+Computing P-values...
+Built VP-tree in 11s
+P-values computed in 83s
+Running t-SNE...
+Running iteration 100/1000 -- 57s
+Running iteration 200/1000 -- 110s
+Running iteration 300/1000 -- 162s
+Running iteration 400/1000 -- 214s
+Running iteration 500/1000 -- 266s
+Running iteration 600/1000 -- 5min
+Running iteration 700/1000 -- 6min
+Running iteration 800/1000 -- 7min
+Running iteration 900/1000 -- 7min
+Running iteration 1000/1000 -- 8min
+Wrote results to res.txt
+
+TOTAL TIME TAKEN 10min
+
