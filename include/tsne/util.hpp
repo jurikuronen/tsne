@@ -48,7 +48,7 @@ struct parameters {
 	uint32_t perplexity = 15;				// Perplexity that P_i should have (with some value tau)
 	uint32_t k = 20;						// Number of neighbors for the k-NN search
 	double tolerance = 1e-4;				// Tolerance for the above binary search
-	uint32_t vp_select = 0;					// VP-tree vantage point selection method (random, min_median)
+	uint32_t vp_select = 0;					// VP-tree vantage point selection method (random, min_median, small_median)
 	uint32_t distance_function = 2;			// Distance function for vp-trees (d^{2x}_ij)
 	
 	/*
