@@ -26,11 +26,11 @@ $(OBJDIR)/compute_p.o: $(SRCDIR)/compute_p.cpp
 
 $(OBJDIR)/file_reading.o: $(SRCDIR)/file_reading.cpp
 	mkdir -p $(OBJDIR)
-	$(CXX) $(CXXFLAGS) -c $(SRCDIR)/file_reading.cpp $@
+	$(CXX) $(CXXFLAGS) -c $(SRCDIR)/file_reading.cpp -o $@
 
 $(OBJDIR)/file_writing.o: $(SRCDIR)/file_writing.cpp
 	mkdir -p $(OBJDIR)
-	$(CXX) $(CXXFLAGS) -c $(SRCDIR)/file_writing.cpp $@
+	$(CXX) $(CXXFLAGS) -c $(SRCDIR)/file_writing.cpp -o $@
 
 $(OBJDIR)/main.o: $(SRCDIR)/main.cpp
 	mkdir -p $(OBJDIR)
