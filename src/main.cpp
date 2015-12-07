@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 	*/
 	file_reading fr;
 	parameters PAR = fr.readConfig();
-	if (PAR.N == 0) return 0; // Signal to main to terminate the program
+	if (PAR.n_threads == 0) return 0; // Signal to main to terminate the program
 	
 	// if (!validConfig()) return 1;
 	

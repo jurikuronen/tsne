@@ -18,7 +18,7 @@ parameters file_reading::readConfig() {
 		std::string cont;
 		while (std::cin >> cont) {
 			if (cont == "Y") break;
-			if (cont == "n") {params.N = 0; return params;}
+			if (cont == "n") {params.n_threads = 0; return params;}
 		}
 		file.open("tsne.config", std::ios::binary | std::ios::in);
 		if (!file.is_open()) {std::cerr << "Problem opening tsne.config.\n"; throw 1;}
