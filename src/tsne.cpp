@@ -67,10 +67,7 @@ std::vector<std::pair<double, double>> tsne::compute_attr_forces(std::vector<std
 	where q_ij * Z = 1 / (1 + ||y_1 - y_j||^2).
 */
 std::vector<std::pair<double, double>> tsne::compute_grad(std::vector<std::pair<double, double>>& Y) {
-	auto start = TIME_NOW;
 	bhtree bh(PAR); bh.build_bhtree(Y);
-	auto end = TIME_NOW;
-	printTime(TIME_TAKEN(start, end));
 	std::vector<std::pair<double, double>> grad(PAR.N),
 		attr_forces = compute_attr_forces(Y),
 		rep_forces = bh.compute_rep_forces(Y);
