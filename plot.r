@@ -32,7 +32,7 @@ get_seq <- function(data, y, i, f) {
 # ------------------------------------------------------------
 data <- read.table("build/res.txt", header = FALSE, sep = ",")
 sc = scale(data); N = length(data[,1]) # Run this always after reading data
-sz = ceil(N / 15000); # Size-factor for .png
+sz = ceiling(N / 15000); # Size-factor for .png
 
 f = max(1, floor(N / 10000)); # Sparse plot
 f = 1; # Plot every digit
